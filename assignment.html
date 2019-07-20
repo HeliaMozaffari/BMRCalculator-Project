@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BMR CALCULATOR</title>
+		<link rel="stylesheet" type="text/css" href="assignment.css">
+		
+	</head>
+	<body>
+	<div class= "navbar">
+			<ul>
+				<li><a href ="assignment.html">IMPERIAL BMR CALCULATOR</a></li>
+				<div class = "chosen">
+				<li><a href ="assignment-p.html" >METRIC BMR CALCULATOR></a></li><br>
+				</div>
+			</ul>
+	</div>
+	<div class ="main_container">
+	
+		<form>
+				
+					<br>Gender:
+					<select id = "gender" required>
+						<option value = "female"> Female </option>
+						<option value = "male"> Male </option>
+					</select>
+					Age:<input type = "number" id = "age" min= "0" required>
+					<p> your height </p>
+					Inch:<input type = "number" id = "centimeter" min= "0" required>
+					<p> your Weight</p>
+					Pound:<input type = "number" id = "kilogram" min= "0" required>
+					<p>Select your activity level:</p>
+					<select id = "activity1">
+						<option value = 1.53> Sedentary or light activity </option>
+						<option value = 1.76> Active or moderately active </option>
+						<option value = 2.25> Vigorously active </option>
+					</select>
+				 <br>
+					<br>
+					Your BMR is: <h3 id="display"></h3>
+					<center><input type = "submit" id="calculateBMR"  onclick="calcbmr" value="Calculate BMR"></center> 
+					<script type ="text/javascript" src="js1.js"></script>
+					
+				
+			</form>
+		</div>
+		
+	</body>
+</html>
